@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="social network, friends">
+    <meta name="description" content="Meet people around world.">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/fontawesome/css/all.css') }}">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block css %}
+    {% endblock %}
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ url_for('static', filename='lib/jquery-3.4.1.min.js') }}"></script>
+    {% block js %}
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <nav id="main-nav">
+        <a href="{{ url_for('index') }}" id="logo">Social<span class="active">Mitux</span></a>
+        <ul>
+          <li>
+            <a href=""><i class="fas fa-home link"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-question link"></i>About</a>
+          </li>
+          <li>
+            <form class="#" action="#" method="GET">
+              <input type="search" name="#" placeholder="Search people, posts, photos, groups...">
+              <button type="submit"><span><i class="fas fa-search"></i></span></button>
+            </form>
+          </li>
+          <li>
+            <a href="{{ url_for('register_user') }}"><i class="fas fa-user-plus link"></i>Sign Up</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-sign-in-alt link"></i>Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

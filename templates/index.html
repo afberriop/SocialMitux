@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+{% block js %}
+<script src="{{ url_for('static', filename='js/index.js') }}" charset="utf-8"></script>
+{% endblock %}
+{% block content %}
+  <section id="showcase">
+    <div class="content">
+      <h1>Meet <span class="active">people</span> around world</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+  </section>
+  <section id="main-wrapper">
+    <section id="wall">
+      <h1 class="wall-title">Publications</h1>
+      <section id="posts">
+        <article class="post">
+          <div class="user-attr">
+            <h1 class="post-title">A title for example</h1>
+            <span id="post-date">Month/Day/Year</span>
+            <ul>
+              <li class="post-profile">
+                <a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}"></a>
+              </li>
+              <li>
+                <a href="#" title="Send Message"><i class="fas fa-inbox" class="active"></i>Send Message</a>
+              </li>
+            </ul>
+          </div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p
+          </div>
+          <div class="actions">
+            <ul>
+              <li><a href="#"><i class="fas fa-thumbs-up"></i></a></li
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fas fa-comment"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="post">
+          <div class="user-attr">
+            <h1 class="post-title">A title for example</h1>
+            <span id="post-date">Month/Day/Year</span>
+            <ul>
+              <li class="post-profile">
+                <a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}"></a>
+              </li>
+              <li>
+                <a href="#" title="Send Message"><i class="fas fa-inbox" class="active"></i>Send Message</a>
+              </li>
+            </ul>
+          </div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p
+          </div>
+          <div class="actions">
+            <ul>
+              <li><a href="#"><i class="fas fa-thumbs-up"></i></a></li
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fas fa-comment"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="post">
+          <div class="user-attr">
+            <h1 class="post-title">A title for example</h1>
+            <span id="post-date">Month/Day/Year</span>
+            <ul>
+              <li class="post-profile">
+                <a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}"></a>
+              </li>
+              <li>
+                <a href="#" title="Send Message"><i class="fas fa-inbox" class="active"></i>Send Message</a>
+              </li>
+            </ul>
+          </div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p
+          </div>
+          <div class="actions">
+            <ul>
+              <li><a href="#"><i class="fas fa-thumbs-up"></i></a></li
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fas fa-comment"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </section>
+    <aside id="friends">
+      <h1><i class="fas fa-user-friends"></i>Friends connected</h1>
+      <ul>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+        <li><a href="#"><img src="{{ url_for('static', filename='img/profile-example.png') }}">Manuel Rubio</a></li>
+      </ul>
+    </aside>
+  </section>
+{% endblock %}

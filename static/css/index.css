@@ -1,0 +1,248 @@
+/*
+  index.html styles.
+  ~~~~~~~~~~~~~~~~~~
+  © 2019 by Manuel Rubio.
+*/
+body {
+  background: #f1f1f1;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 25em;
+  text-align: center;
+  background-image: url('../img/showcase.jpeg');
+  background-size: 100%;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, .5);
+  overflow: hidden;
+}
+
+#showcase .content {
+  min-height: 25em;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#showcase .content h1, p {
+  position: relative;
+}
+
+#showcase .content h1 {
+  font-size: 200%;
+  top: 4em;
+  color: white;
+  font-family: 'Signika Negative', 'Arial';
+  margin-bottom: .3em;
+}
+
+#showcase .content h1 .active {
+  color: #F25C5C;
+}
+
+#showcase .content p {
+  top: 8em;
+  color: white;
+  font-family: 'Arial', 'Helvetica';
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* Main wrapper */
+#main-wrapper {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 5em;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* wall */
+#wall {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#wall .wall-title {
+  text-align: center;
+  color: white;
+  background: #63aabc;
+  font-family: 'Signika Negative', 'Arial';
+  font-size: 130%;
+  padding: 1em;
+  letter-spacing: 1px;
+}
+
+/* posts */
+#posts {
+  width: 90%;
+  height: 40em;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+#posts::-webkit-scrollbar {
+  width: 8px;
+  height: none;
+}
+
+#posts::-webkit-scrollbar-thumb {
+  width:
+}
+
+.post {
+  margin-top: 1em;
+  background: #fff;
+  margin-top: 1em;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.user-attr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-attr h1{
+  display: block;
+  text-align: left;
+  padding: .5em;
+  font-family: 'Signika Negative', 'Arial';
+  font-weight: bolder;
+  font-size: 120%;
+  color: #4E514F;
+  background: #F25C5C;
+  color: white;
+}
+
+.user-attr ul, li {
+  display: inline-block;
+  padding: 0 .2em;
+}
+
+.user-attr ul li a {
+  text-decoration: none;
+  font-family: 'Signika Negative', 'Arial';
+  font-size: 80%;
+  color: #60204b;
+}
+
+.user-attr ul li a i {
+  padding-right: .3em;
+}
+
+.post-profile {
+  overflow: hidden;
+  float: left;
+}
+
+.post-profile a img {
+  border: 0;
+  border-radius: 99px;
+  width: 40px;
+  transform: translateY(35%);
+}
+
+#post-date {
+  color: rgba(0, 0, 0, .5);
+  display: block;
+  font-family: 'Signika Negative', 'Arial';
+  padding-left: 1em;
+  float: right;
+  padding-right: 1em;
+}
+
+.post .body {
+  padding: 1em;
+  text-align: justify;
+}
+
+.post p {
+  font-family: 'Signika Negative', 'Arial';
+  font-size: 120%;
+  color: rgba(0, 0, 0, .8);
+}
+
+.post .actions ul, li {
+  list-style: none;
+  display: inline-block;
+}
+
+.post .actions ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 100%;
+  padding: 0 .3em;
+}
+
+.post .actions ul li a:hover {
+  color: #63aabc;
+  transition: all 500ms;
+}
+
+/* Friends */
+#friends {
+  width: 25%;
+  margin-right: 1%;
+  float: right;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+#friends h1 {
+  background: #63aabc;
+  padding: .5em;
+  text-align: center;
+  font-family: 'Signika Negative', 'Arial';
+  color: white;
+}
+
+#friens h1 i {
+  margin-right: .5em;
+}
+
+#friends ul {
+  padding: .2em;
+}
+
+#friends ul li {
+  height: 4em;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#friends ul li:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 100ms;
+}
+
+#friends ul li a {
+  display: inline-block;
+  width: 99%;
+  height: 99%;
+  line-height: 4em;
+  padding: 0 .1em;
+  font-size: 110%;
+  font-family: 'Signika Negative', 'Arial';
+  text-decoration: none;
+  color: rgba(0, 0, 0, .7);
+  float: left;
+}
+
+#friends ul li a img {
+  border-radius: 99px;
+  width: 36px;
+  transform: translateY(15%);
+  margin-right: .5em;
+}
