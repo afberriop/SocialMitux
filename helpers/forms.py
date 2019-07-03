@@ -28,3 +28,16 @@ class RegisterForm(Form):
             message='Passwords not match')
     ])
     confirm_password = PasswordField('Confirm Password')
+
+
+class LoginForm(Form):
+    email = EmailField('Email', [
+        validators.DataRequired(),
+        validators.Length(max=65,
+            message='Characters limit reached')
+    ])
+    password = PasswordField('New Password', [
+        validators.DataRequired(),
+        validators.Length(min=8,
+            message='Minimum 8 characters'),
+    ])

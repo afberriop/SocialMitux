@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% from 'macros/_render_field.html' import render_field %}
+{% block title %}Sign Up{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+{% block content %}
+<form id="register-form" action="{{ url_for('login_user') }}" method="POST">
+  {{ render_field(loginForm.email, placeholder='Your Email') }}
+  {{ render_field(loginForm.password, placeholder='Your Password') }}
+  <button type="submit">Sign In</button>
+</form>
+{% endblock %}

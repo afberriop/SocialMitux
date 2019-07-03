@@ -32,7 +32,7 @@ class User(db.Model):
     def __hash_password(password):
         return generate_password_hash(password)
 
-    def verify_password(password):
+    def verify_password(self, password):
         return check_password_hash(self.password, password)
 
     def __repr__(self):
