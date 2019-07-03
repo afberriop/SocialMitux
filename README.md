@@ -4,7 +4,7 @@
 >**SocialMitux** is a project created by *Manuel Rubio* or *ManuelIsCoding* on **GitHub**.
 This project is developed using __Python__ and his microframework __Flask__.
 
-![SocialMitux]('assets/readme.png')
+![SocialMitux](assets/readme.png)
 
 ### Instructions
 - **Clone the GitHub repository**
