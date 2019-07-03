@@ -37,5 +37,5 @@ class BaseConfig:
 class DevelopmentConfig(BaseConfig):
     SECRET_KEY = _generate_secret_key(99)
     DEBUG = True
-    #SQLALCHEMY_DATABASE_URI = ''
-    #SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_DATABASE_URI = 'mysql://sm@localhost/SocialMitux'
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
